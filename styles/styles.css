@@ -4,6 +4,10 @@
 }
 
 body {
-  font-family: sans-serif;
+  font-family: 'Questrial', sans-serif;
+}
+
+header h1 {
+  font-family: 'Montserrat', sans-serif;
 }
 /*# sourceMappingURL=styles.css.map */
