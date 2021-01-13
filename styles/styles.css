@@ -100,6 +100,7 @@ button {
   letter-spacing: 2px;
   border: none;
   outline: none;
+  cursor: pointer;
 }
 
 .btn-primary {
@@ -107,6 +108,12 @@ button {
   font-size: 11px;
   text-transform: uppercase;
   background-color: white;
+}
+
+.btn-secundary {
+  color: white;
+  font-size: 11px;
+  background-color: #ff5672;
 }
 
 .displayMood {
@@ -163,6 +170,37 @@ button {
 .bodyMenu .bodyMenu__content ul li:hover {
   color: white;
   background-color: #ff5672;
+}
+
+.displayImg {
+  margin: 20px auto;
+  max-width: 1200px;
+  text-align: center;
+}
+
+.displayImg #displayImg__content {
+  margin: 40px 0px;
+}
+
+.displayImg #displayImg__content.displayImg__content__grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+.displayImg #displayImg__content.displayImg__content__columns {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 1fr;
+      grid-template-columns: auto 1fr;
+  grid-gap: 20px;
+}
+
+.displayImg #displayImg__content img {
+  width: 100%;
+  height: auto;
 }
 
 footer {

@@ -16,17 +16,17 @@ const fetchPhotos = async () => {
 
         for(let i = 0 ; i < imagesList.length ; i++ ) {
 
-        const image = document.createElement('img');
+        const image = document.createElement('img')
 
-        image.src = imagesList[i].urls.thumb;
+        image.src = imagesList[i].urls.regular
 
-        document.body.appendChild(image);
+        document.getElementById('displayImg__content').appendChild(image)
 
         }
     }
 
     createImages(imagesList)
-    
+
 }
 
 fetchPhotos()

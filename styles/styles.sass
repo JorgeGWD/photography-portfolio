@@ -62,12 +62,18 @@ button
     letter-spacing: 2px
     border: none
     outline: none
+    cursor: pointer
 
 .btn-primary
     color: $primary-color
     font-size: 11px
     text-transform: uppercase
     background-color: white
+
+.btn-secundary
+    color: white
+    font-size: 11px
+    background-color: $secundary-color
 
 .displayMood
     display: flex
@@ -97,6 +103,24 @@ button
                 &:hover
                     color: white
                     background-color: $secundary-color
+
+.displayImg
+    margin: 20px auto
+    max-width: 1200px
+    text-align: center
+    #displayImg__content
+        margin: 40px 0px
+        &.displayImg__content__grid
+            display: grid
+            grid-template-columns: repeat(3,1fr)
+            grid-gap: 20px
+        &.displayImg__content__columns
+            display: grid
+            grid-template-columns: auto 1fr
+            grid-gap: 20px
+        img
+            width: 100%
+            height: auto
 
 footer
     margin: 20px 0px
