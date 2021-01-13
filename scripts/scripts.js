@@ -24,13 +24,13 @@ const fetchPhotos = async () => {
 
             title.innerHTML = imagesList[i].alt_description
 
-            newDiv.className = 'displayImg__container'
+            newDiv.className = 'displayImg__content'
 
             newDiv.appendChild(image)
 
             newDiv.appendChild(title)
 
-            document.getElementById('displayImg__content').appendChild(newDiv)
+            document.getElementById('displayImg__container').appendChild(newDiv)
 
         }
     }
@@ -62,9 +62,9 @@ const displayBodyMenu = () => {
 }
 
 const displayGrid = () => {
-    const menu = document.getElementById('displayImg__content')
+    const menu = document.getElementById('displayImg__container')
 
-    if(menu.className === 'displayImg__content') {
+    if(menu.className === 'displayImg__container') {
         menu.className += ' displayImg__content__grid'
     } else {
         menu.className = 'displayImg__content__grid'
@@ -72,9 +72,9 @@ const displayGrid = () => {
 }
 
 const displayColumn = () => {
-    const menu = document.getElementById('displayImg__content')
+    const menu = document.getElementById('displayImg__container')
 
-    if(menu.className === 'displayImg__content') {
+    if(menu.className === 'displayImg__container') {
         menu.className += ' displayImg__content__columns'
     } else {
         menu.className = 'displayImg__content__columns'
