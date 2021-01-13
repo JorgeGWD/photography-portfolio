@@ -71,7 +71,8 @@ nav .nav__content .nav__navigation .menuIcon {
 header {
   display: -ms-grid;
   display: grid;
-  height: calc( 100vh - 80px);
+  padding: 20px;
+  height: calc( 100vh - 120px);
   color: white;
   background-color: #fc758c;
 }
@@ -178,7 +179,12 @@ button {
   background-color: #ff5672;
 }
 
+.bodyMenu .bodyMenu__content .bodyMenuIcon {
+  display: none;
+}
+
 .displayImg {
+  margin: auto;
   max-width: 1200px;
   text-align: center;
 }
@@ -270,6 +276,9 @@ footer .footer__content ul li img {
     right: 0px;
     display: block;
   }
+  header .header__content h1 {
+    font-size: 30px;
+  }
   .bodyMenu .bodyMenu__content ul.bodyNavMenu {
     position: absolute;
     top: 20px;
@@ -291,6 +300,17 @@ footer .footer__content ul li img {
     position: absolute;
     top: 10px;
     display: block;
+  }
+  .displayImg #displayImg__content.displayImg__content__grid {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .displayImg #displayImg__content.displayImg__content__grid {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
   }
 }
 /*# sourceMappingURL=styles.css.map */

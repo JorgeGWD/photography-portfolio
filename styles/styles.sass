@@ -42,7 +42,8 @@ nav
 
 header
     display: grid
-    height: calc( 100vh - 80px )
+    padding: 20px
+    height: calc( 100vh - 120px )
     color: white
     background-color: $primary-color
     .header__content
@@ -107,8 +108,11 @@ button
                 &:hover
                     color: white
                     background-color: $secundary-color
+        .bodyMenuIcon
+            display: none
 
 .displayImg
+    margin: auto
     max-width: 1200px
     text-align: center
     #displayImg__content
@@ -167,6 +171,10 @@ footer
                     top: 10px
                     right: 0px
                     display: block
+    header
+        .header__content
+            h1
+                font-size: 30px
     .bodyMenu
         .bodyMenu__content
             ul.bodyNavMenu
@@ -184,3 +192,13 @@ footer
                 position: absolute
                 top: 10px
                 display: block
+    .displayImg
+        #displayImg__content
+            &.displayImg__content__grid
+                grid-template-columns: repeat(2,1fr)
+
+@media screen and ( max-width: 500px )
+    .displayImg
+        #displayImg__content
+            &.displayImg__content__grid
+                grid-template-columns: 1fr
