@@ -30,3 +30,23 @@ const fetchPhotos = async () => {
 }
 
 fetchPhotos()
+
+const displayMenu = () => {
+    const menu = document.getElementById('menu')
+
+    if(menu.className === 'topNavMenu') {
+        menu.className += ' responsive'
+    } else {
+        menu.className = 'topNavMenu'
+    }
+}
+
+const displayBodyMenu = () => {
+    const menu = document.getElementById('bodyMenu')
+
+    if(menu.className === 'bodyNavMenu') {
+        menu.className += ' responsive'
+    } else {
+        menu.className = 'bodyNavMenu'
+    }
+}

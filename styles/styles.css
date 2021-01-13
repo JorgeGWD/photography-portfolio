@@ -20,7 +20,7 @@ nav .nav__content {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin: auto;
-  padding: 20px 0px;
+  padding: 20px;
   max-width: 1600px;
 }
 
@@ -30,6 +30,7 @@ nav .nav__content .nav__logo img {
 }
 
 nav .nav__content .nav__navigation {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -61,6 +62,10 @@ nav .nav__content .nav__navigation ul li {
 nav .nav__content .nav__navigation ul li:hover {
   color: white;
   background-color: #ff5672;
+}
+
+nav .nav__content .nav__navigation .menuIcon {
+  display: none;
 }
 
 header {
@@ -139,6 +144,7 @@ button {
 }
 
 .bodyMenu .bodyMenu__content {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -173,13 +179,13 @@ button {
 }
 
 .displayImg {
-  margin: 20px auto;
   max-width: 1200px;
   text-align: center;
 }
 
 .displayImg #displayImg__content {
   margin: 40px 0px;
+  padding: 20px;
 }
 
 .displayImg #displayImg__content.displayImg__content__grid {
@@ -238,5 +244,53 @@ footer .footer__content ul li {
 footer .footer__content ul li img {
   width: auto;
   height: 20px;
+}
+
+@media screen and (max-width: 850px) {
+  nav .nav__content .nav__navigation ul.topNavMenu {
+    position: absolute;
+    top: 20px;
+    right: -20px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: white;
+    opacity: 0;
+  }
+  nav .nav__content .nav__navigation ul.topNavMenu.responsive {
+    top: 50px;
+    opacity: 1;
+    -webkit-transition: all .2s;
+    transition: all .2s;
+  }
+  nav .nav__content .nav__navigation .menuIcon {
+    position: absolute;
+    top: 10px;
+    right: 0px;
+    display: block;
+  }
+  .bodyMenu .bodyMenu__content ul.bodyNavMenu {
+    position: absolute;
+    top: 20px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    background-color: white;
+    opacity: 0;
+  }
+  .bodyMenu .bodyMenu__content ul.bodyNavMenu.responsive {
+    top: 50px;
+    opacity: 1;
+    -webkit-transition: all .2s;
+    transition: all .2s;
+  }
+  .bodyMenu .bodyMenu__content .bodyMenuIcon {
+    position: absolute;
+    top: 10px;
+    display: block;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
