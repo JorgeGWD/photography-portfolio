@@ -6,6 +6,7 @@
 
 body
     font-family: 'Questrial', sans-serif
+    letter-spacing: 3px
 
 nav
     color: $dark_gray
@@ -37,5 +38,62 @@ nav
                         background-color: $secundary-color
 
 header
-    h1
-        font-family: 'Montserrat', sans-serif
+    display: grid
+    height: calc( 100vh - 80px )
+    color: white
+    background-color: $primary-color
+    .header__content
+        display: grid
+        grid-gap: 30px
+        align-self: center
+        text-align: center
+        h1
+            font-family: 'Montserrat', sans-serif
+            font-size: 40px
+            text-transform: uppercase
+            letter-spacing: 10px
+        p
+            font-size: 16px
+
+button
+    margin: auto
+    padding: 10px 20px
+    width: fit-content
+    letter-spacing: 2px
+    border: none
+    outline: none
+
+.btn-primary
+    color: $primary-color
+    font-size: 11px
+    text-transform: uppercase
+    background-color: white
+
+.displayMood
+    display: flex
+    justify-content: center
+    margin: 40px 0px
+    .displayMood__content
+        display: flex
+        grid-gap: 20px
+        img
+            width: auto
+            height: 15px
+
+.bodyMenu
+    .bodyMenu__content
+        display: flex
+        justify-content: center
+        ul
+            display: flex
+            grid-gap: 20px
+            li
+                display: flex
+                padding: 10px 20px
+                font-size: 14px
+                align-items: center
+                list-style: none
+                cursor: pointer
+                &:hover
+                    color: white
+                    background-color: $secundary-color

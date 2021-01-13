@@ -5,6 +5,7 @@
 
 body {
   font-family: 'Questrial', sans-serif;
+  letter-spacing: 3px;
 }
 
 nav {
@@ -62,7 +63,105 @@ nav .nav__content .nav__navigation ul li:hover {
   background-color: #ff5672;
 }
 
-header h1 {
+header {
+  display: -ms-grid;
+  display: grid;
+  height: calc( 100vh - 80px);
+  color: white;
+  background-color: #fc758c;
+}
+
+header .header__content {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 30px;
+  -ms-grid-row-align: center;
+      align-self: center;
+  text-align: center;
+}
+
+header .header__content h1 {
   font-family: 'Montserrat', sans-serif;
+  font-size: 40px;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+}
+
+header .header__content p {
+  font-size: 16px;
+}
+
+button {
+  margin: auto;
+  padding: 10px 20px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  letter-spacing: 2px;
+  border: none;
+  outline: none;
+}
+
+.btn-primary {
+  color: #fc758c;
+  font-size: 11px;
+  text-transform: uppercase;
+  background-color: white;
+}
+
+.displayMood {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 40px 0px;
+}
+
+.displayMood .displayMood__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  grid-gap: 20px;
+}
+
+.displayMood .displayMood__content img {
+  width: auto;
+  height: 15px;
+}
+
+.bodyMenu .bodyMenu__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.bodyMenu .bodyMenu__content ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  grid-gap: 20px;
+}
+
+.bodyMenu .bodyMenu__content ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px 20px;
+  font-size: 14px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+  cursor: pointer;
+}
+
+.bodyMenu .bodyMenu__content ul li:hover {
+  color: white;
+  background-color: #ff5672;
 }
 /*# sourceMappingURL=styles.css.map */
