@@ -164,4 +164,41 @@ button {
   color: white;
   background-color: #ff5672;
 }
+
+footer {
+  margin: 20px 0px;
+  color: #c3d0d8;
+  font-size: 13px;
+}
+
+footer .footer__content {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 30px;
+  padding: 20px 0px;
+  text-align: center;
+}
+
+footer .footer__content span {
+  color: #fc758c;
+}
+
+footer .footer__content ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  grid-gap: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer .footer__content ul li {
+  list-style: none;
+}
+
+footer .footer__content ul li img {
+  width: auto;
+  height: 20px;
+}
 /*# sourceMappingURL=styles.css.map */
