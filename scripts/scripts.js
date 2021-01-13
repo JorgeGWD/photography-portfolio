@@ -14,11 +14,29 @@ const fetchPhotos = async () => {
 
         for(let i = 0 ; i < imagesList.length ; i++ ) {
 
-        const image = document.createElement('img')
+        newDiv = document.createElement('div')
+
+        image = document.createElement('img')
 
         image.src = imagesList[i].urls.regular
 
-        document.getElementById('displayImg__content').appendChild(image)
+        title = document.createElement('h4')
+
+        title.innerHTML = imagesList[i].alt_description
+
+        newDiv.id = 'displayImg__container'
+
+        newDiv.appendChild(image)
+
+        newDiv.appendChild(title)
+
+        document.getElementById('displayImg__content').appendChild(newDiv)
+
+        //document.getElementById('displayImg__content').appendChild(image)
+
+        //document.getElementById('displayImg__content').appendChild(title)
+
+        console.log(title)
 
         }
     }
