@@ -14,29 +14,23 @@ const fetchPhotos = async () => {
 
         for(let i = 0 ; i < imagesList.length ; i++ ) {
 
-        newDiv = document.createElement('div')
+            newDiv = document.createElement('div')
 
-        image = document.createElement('img')
+            image = document.createElement('img')
 
-        image.src = imagesList[i].urls.regular
+            image.src = imagesList[i].urls.regular
 
-        title = document.createElement('h4')
+            title = document.createElement('h4')
 
-        title.innerHTML = imagesList[i].alt_description
+            title.innerHTML = imagesList[i].alt_description
 
-        newDiv.id = 'displayImg__container'
+            newDiv.className = 'displayImg__container'
 
-        newDiv.appendChild(image)
+            newDiv.appendChild(image)
 
-        newDiv.appendChild(title)
+            newDiv.appendChild(title)
 
-        document.getElementById('displayImg__content').appendChild(newDiv)
-
-        //document.getElementById('displayImg__content').appendChild(image)
-
-        //document.getElementById('displayImg__content').appendChild(title)
-
-        console.log(title)
+            document.getElementById('displayImg__content').appendChild(newDiv)
 
         }
     }
@@ -64,5 +58,25 @@ const displayBodyMenu = () => {
         menu.className += ' responsive'
     } else {
         menu.className = 'bodyNavMenu'
+    }
+}
+
+const displayGrid = () => {
+    const menu = document.getElementById('displayImg__content')
+
+    if(menu.className === 'displayImg__content') {
+        menu.className += ' displayImg__content__grid'
+    } else {
+        menu.className = 'displayImg__content__grid'
+    }
+}
+
+const displayColumn = () => {
+    const menu = document.getElementById('displayImg__content')
+
+    if(menu.className === 'displayImg__content') {
+        menu.className += ' displayImg__content__columns'
+    } else {
+        menu.className = 'displayImg__content__columns'
     }
 }

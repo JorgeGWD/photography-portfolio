@@ -194,6 +194,14 @@ button {
   padding: 20px;
 }
 
+.displayImg #displayImg__content.displayImg__content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
 .displayImg #displayImg__content.displayImg__content__grid {
   display: -ms-grid;
   display: grid;
@@ -205,9 +213,21 @@ button {
 .displayImg #displayImg__content.displayImg__content__columns {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: auto 1fr;
-      grid-template-columns: auto 1fr;
   grid-gap: 20px;
+}
+
+.displayImg #displayImg__content.displayImg__content__columns .displayImg__container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+}
+
+.displayImg #displayImg__content.displayImg__content__columns .displayImg__container h4 {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .displayImg #displayImg__content img {
@@ -227,7 +247,7 @@ button {
 }
 
 .displayImg #displayImg__content h4 {
-  position: absolute;
+  position: relative;
 }
 
 footer {

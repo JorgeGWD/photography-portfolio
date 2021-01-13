@@ -118,14 +118,23 @@ button
     #displayImg__content
         margin: 40px 0px
         padding: 20px
+        &.displayImg__content
+            display: grid
+            grid-template-columns: repeat(3,1fr)
+            grid-gap: 20px
         &.displayImg__content__grid
             display: grid
             grid-template-columns: repeat(3,1fr)
             grid-gap: 20px
         &.displayImg__content__columns
             display: grid
-            grid-template-columns: auto 1fr
             grid-gap: 20px
+            .displayImg__container
+                display: grid
+                grid-template-columns: repeat(2,1fr)
+                grid-gap: 20px
+                h4
+                    align-self: center
         img
             position: relative
             width: 100%
@@ -139,7 +148,7 @@ button
                 height: 100%
                 background-color: $secundary-color
         h4
-            position: absolute
+            position: relative
 
 footer
     margin: 20px 0px
