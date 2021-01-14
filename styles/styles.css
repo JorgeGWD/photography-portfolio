@@ -44,6 +44,7 @@ nav .nav__content .nav__navigation ul {
   display: -ms-flexbox;
   display: flex;
   grid-gap: 20px;
+  margin-right: 40px;
 }
 
 nav .nav__content .nav__navigation ul li {
@@ -62,6 +63,14 @@ nav .nav__content .nav__navigation ul li {
 nav .nav__content .nav__navigation ul li:hover {
   color: white;
   background-color: #ff5672;
+}
+
+nav .nav__content .nav__navigation img {
+  width: auto;
+  height: 22px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 nav .nav__content .nav__navigation .menuIcon {
@@ -334,7 +343,7 @@ footer .footer__content ul li img {
   nav .nav__content .nav__navigation .menuIcon {
     position: absolute;
     top: 10px;
-    right: 0px;
+    right: 40px;
     display: block;
   }
   header .header__content h1 {
